@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>age</key>
+	<integer>0</integer>
+	<key>bees</key>
+	<integer>0</integer>
+	<key>birthday</key>
+	<date>2011-09-11T00:19:11Z</date>
+	<key>cobras</key>
+	<integer>0</integer>
+	<key>double_pets</key>
+	<integer>0</integer>
+	<key>double_pokes</key>
+	<integer>0</integer>
+	<key>fingers</key>
+	<integer>0</integer>
+	<key>full_bellies</key>
+	<integer>0</integer>
+	<key>hands</key>
+	<integer>0</integer>
+	<key>hunger</key>
+	<integer>1</integer>
+	<key>last_fed</key>
+	<date>2011-09-11T00:25:21Z</date>
+	<key>last_visit</key>
+	<date>2011-09-11T00:25:31Z</date>
+	<key>name</key>
+	<string>My Honey Badger</string>
+	<key>pets</key>
+	<integer>0</integer>
+	<key>pokes</key>
+	<integer>0</integer>
+	<key>resurrections</key>
+	<integer>0</integer>
+	<key>last_resurrection</key>
+	<date>2011-09-19T06:11:26Z</date>
+	<key>badges</key>
+	<dict/>
+</dict>
+</plist>

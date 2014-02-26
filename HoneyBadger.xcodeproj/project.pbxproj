@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC52F673141D8CAF00D129C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC52F672141D8CAF00D129C1 /* UIKit.framework */; };
+		BC52F675141D8CAF00D129C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC52F674141D8CAF00D129C1 /* Foundation.framework */; };
+		BC52F677141D8CAF00D129C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC52F676141D8CAF00D129C1 /* CoreGraphics.framework */; };
+		BC52F67D141D8CAF00D129C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC52F67B141D8CAF00D129C1 /* InfoPlist.strings */; };
+		BC52F680141D8CAF00D129C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52F67F141D8CAF00D129C1 /* main.m */; };
+		BC52F683141D8CAF00D129C1 /* HoneyBadgerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52F682141D8CAF00D129C1 /* HoneyBadgerAppDelegate.m */; };
+		BC52F686141D8CAF00D129C1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC52F684141D8CAF00D129C1 /* MainWindow.xib */; };
+		BC52F689141D8CAF00D129C1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52F688141D8CAF00D129C1 /* FirstViewController.m */; };
+		BC52F68C141D8CAF00D129C1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52F68B141D8CAF00D129C1 /* SecondViewController.m */; };
+		BC52F68F141D8CAF00D129C1 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC52F68D141D8CAF00D129C1 /* FirstView.xib */; };
+		BC52F692141D8CAF00D129C1 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC52F690141D8CAF00D129C1 /* SecondView.xib */; };
+		BC52F699141D8CAF00D129C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC52F672141D8CAF00D129C1 /* UIKit.framework */; };
+		BC52F69A141D8CAF00D129C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC52F674141D8CAF00D129C1 /* Foundation.framework */; };
+		BC52F69B141D8CAF00D129C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC52F676141D8CAF00D129C1 /* CoreGraphics.framework */; };
+		BC52F6A3141D8CAF00D129C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC52F6A1141D8CAF00D129C1 /* InfoPlist.strings */; };
+		BC52F6A6141D8CAF00D129C1 /* HoneyBadgerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = BC52F6A5141D8CAF00D129C1 /* HoneyBadgerTests.h */; };
+		BC52F6A8141D8CAF00D129C1 /* HoneyBadgerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52F6A7141D8CAF00D129C1 /* HoneyBadgerTests.m */; };
+		BC52F6D7141D903100D129C1 /* BadgerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52F6D6141D903100D129C1 /* BadgerModel.m */; };
+		BC52F6E5141D905100D129C1 /* AbstractGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52F6DA141D905100D129C1 /* AbstractGradientButton.m */; };
+		BC52F6E6141D905100D129C1 /* BlueGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52F6DC141D905100D129C1 /* BlueGradientButton.m */; };
+		BC52F6E7141D905100D129C1 /* CG_TestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52F6DE141D905100D129C1 /* CG_TestAppDelegate.m */; };
+		BC52F6E8141D905100D129C1 /* CG_TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52F6E0141D905100D129C1 /* CG_TestViewController.m */; };
+		BC52F6E9141D905100D129C1 /* NavBarBackgroundGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52F6E2141D905100D129C1 /* NavBarBackgroundGradientView.m */; };
+		BC52F6EA141D905100D129C1 /* RedGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52F6E4141D905100D129C1 /* RedGradientButton.m */; };
+		BC52F6EE141D911000D129C1 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = BC52F6ED141D911000D129C1 /* heart.png */; };
+		BC52F6F0141D9D6B00D129C1 /* MyBadger.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC52F6EF141D9D6B00D129C1 /* MyBadger.plist */; };
+		BC52F6FD141DA1BB00D129C1 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC52F6F3141DA1BB00D129C1 /* FirstView.xib */; };
+		BC52F6FE141DA1BB00D129C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC52F6F5141DA1BB00D129C1 /* InfoPlist.strings */; };
+		BC52F6FF141DA1BB00D129C1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC52F6F7141DA1BB00D129C1 /* MainWindow.xib */; };
+		BC52F700141DA1BB00D129C1 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC52F6F9141DA1BB00D129C1 /* SecondView.xib */; };
+		BC52F704141DA66A00D129C1 /* cobra_64.png in Resources */ = {isa = PBXBuildFile; fileRef = BC52F702141DA66A00D129C1 /* cobra_64.png */; };
+		BC52F705141DA66A00D129C1 /* wasp_64.png in Resources */ = {isa = PBXBuildFile; fileRef = BC52F703141DA66A00D129C1 /* wasp_64.png */; };
+		BC52F707141DA81400D129C1 /* sleep.png in Resources */ = {isa = PBXBuildFile; fileRef = BC52F706141DA81400D129C1 /* sleep.png */; };
+		BC52F709141DD15A00D129C1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC52F708141DD15A00D129C1 /* AudioToolbox.framework */; };
+		BC52F71314204EC100D129C1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC52F71214204EC100D129C1 /* QuartzCore.framework */; };
+		BC52F7151420696C00D129C1 /* growl.wav in Resources */ = {isa = PBXBuildFile; fileRef = BC52F7141420696C00D129C1 /* growl.wav */; };
+		BCE7A18014252F5A00A3B5DD /* Reactions.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE7A17F14252F5A00A3B5DD /* Reactions.m */; };
+		BCE7A18D142569EF00A3B5DD /* angel.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A18B142569EF00A3B5DD /* angel.png */; };
+		BCE7A18E142569EF00A3B5DD /* devil.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A18C142569EF00A3B5DD /* devil.png */; };
+		BCE7A1981426794600A3B5DD /* bite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1971426794600A3B5DD /* bite.mp3 */; };
+		BCE7A19A14267AE100A3B5DD /* happy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A19914267AE100A3B5DD /* happy.mp3 */; };
+		BCE7A19D14267B3000A3B5DD /* SoundEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE7A19C14267B3000A3B5DD /* SoundEffects.m */; };
+		BCE7A19F14267DFB00A3B5DD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE7A19E14267DFB00A3B5DD /* AVFoundation.framework */; };
+		BCE7A1A914268F7D00A3B5DD /* snore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1A814268F7D00A3B5DD /* snore.mp3 */; };
+		BCE7A1AC142697B300A3B5DD /* speaker-off.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1AA142697B300A3B5DD /* speaker-off.png */; };
+		BCE7A1AD142697B300A3B5DD /* speaker.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1AB142697B300A3B5DD /* speaker.png */; };
+		BCE7A1B41426D04000A3B5DD /* badger-angry-scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1AF1426D04000A3B5DD /* badger-angry-scaled.png */; };
+		BCE7A1B51426D04000A3B5DD /* badger-awake-scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1B01426D04000A3B5DD /* badger-awake-scaled.png */; };
+		BCE7A1B61426D04000A3B5DD /* badger-happy-scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1B11426D04000A3B5DD /* badger-happy-scaled.png */; };
+		BCE7A1B71426D04000A3B5DD /* badger-really-happy-scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1B21426D04000A3B5DD /* badger-really-happy-scaled.png */; };
+		BCE7A1B81426D04000A3B5DD /* badger-sleeping-scaled.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1B31426D04000A3B5DD /* badger-sleeping-scaled.png */; };
+		BCE7A1BC1426D13800A3B5DD /* badger-scaled.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1BB1426D13800A3B5DD /* badger-scaled.jpg */; };
+		BCE7A1BF1426E38D00A3B5DD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1BE1426E38D00A3B5DD /* icon.png */; };
+		BCE7A1C71426E87700A3B5DD /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1C61426E87700A3B5DD /* icon-114.png */; };
+		BCE7A1C91426E95300A3B5DD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1C81426E95300A3B5DD /* Default.png */; };
+		BCE7A1CB1426EA2B00A3B5DD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1CA1426EA2B00A3B5DD /* Default@2x.png */; };
+		BCE7A1CD14270AC300A3B5DD /* badger-tab-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1CC14270AC300A3B5DD /* badger-tab-icon.png */; };
+		BCE7A1CF14270AE400A3B5DD /* badger-tab-icon-30.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1CE14270AE400A3B5DD /* badger-tab-icon-30.png */; };
+		BCE7A1D114270C6700A3B5DD /* den-icon-30.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1D014270C6700A3B5DD /* den-icon-30.png */; };
+		BCE7A1D314270CE400A3B5DD /* badges-icon-30.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1D214270CE400A3B5DD /* badges-icon-30.png */; };
+		BCE7A1D61427101D00A3B5DD /* Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE7A1D51427101D00A3B5DD /* Badge.m */; };
+		BCE7A1E314280E1300A3B5DD /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE7A1E214280E1200A3B5DD /* Notification.m */; };
+		BCE7A1E5142961DD00A3B5DD /* badge.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A1E4142961DC00A3B5DD /* badge.png */; };
+		BCE7A2031429895300A3B5DD /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE7A2011429895200A3B5DD /* ThirdViewController.m */; };
+		BCE7A2041429895300A3B5DD /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE7A2021429895300A3B5DD /* ThirdViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC52F69C141D8CAF00D129C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC52F665141D8CAF00D129C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC52F66D141D8CAF00D129C1;
+			remoteInfo = HoneyBadger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC52F66E141D8CAF00D129C1 /* HoneyBadger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoneyBadger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC52F672141D8CAF00D129C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BC52F674141D8CAF00D129C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BC52F676141D8CAF00D129C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BC52F67A141D8CAF00D129C1 /* HoneyBadger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HoneyBadger-Info.plist"; sourceTree = "<group>"; };
+		BC52F67C141D8CAF00D129C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC52F67E141D8CAF00D129C1 /* HoneyBadger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HoneyBadger-Prefix.pch"; sourceTree = "<group>"; };
+		BC52F67F141D8CAF00D129C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC52F681141D8CAF00D129C1 /* HoneyBadgerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HoneyBadgerAppDelegate.h; sourceTree = "<group>"; };
+		BC52F682141D8CAF00D129C1 /* HoneyBadgerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HoneyBadgerAppDelegate.m; sourceTree = "<group>"; };
+		BC52F685141D8CAF00D129C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		BC52F687141D8CAF00D129C1 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BC52F688141D8CAF00D129C1 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BC52F68A141D8CAF00D129C1 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BC52F68B141D8CAF00D129C1 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		BC52F68E141D8CAF00D129C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		BC52F691141D8CAF00D129C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		BC52F698141D8CAF00D129C1 /* HoneyBadgerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoneyBadgerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC52F6A0141D8CAF00D129C1 /* HoneyBadgerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HoneyBadgerTests-Info.plist"; sourceTree = "<group>"; };
+		BC52F6A2141D8CAF00D129C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC52F6A4141D8CAF00D129C1 /* HoneyBadgerTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HoneyBadgerTests-Prefix.pch"; sourceTree = "<group>"; };
+		BC52F6A5141D8CAF00D129C1 /* HoneyBadgerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HoneyBadgerTests.h; sourceTree = "<group>"; };
+		BC52F6A7141D8CAF00D129C1 /* HoneyBadgerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HoneyBadgerTests.m; sourceTree = "<group>"; };
+		BC52F6D5141D903100D129C1 /* BadgerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgerModel.h; sourceTree = "<group>"; };
+		BC52F6D6141D903100D129C1 /* BadgerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgerModel.m; sourceTree = "<group>"; };
+		BC52F6D9141D905100D129C1 /* AbstractGradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractGradientButton.h; sourceTree = "<group>"; };
+		BC52F6DA141D905100D129C1 /* AbstractGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractGradientButton.m; sourceTree = "<group>"; };
+		BC52F6DB141D905100D129C1 /* BlueGradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueGradientButton.h; sourceTree = "<group>"; };
+		BC52F6DC141D905100D129C1 /* BlueGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueGradientButton.m; sourceTree = "<group>"; };
+		BC52F6DD141D905100D129C1 /* CG_TestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_TestAppDelegate.h; sourceTree = "<group>"; };
+		BC52F6DE141D905100D129C1 /* CG_TestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CG_TestAppDelegate.m; sourceTree = "<group>"; };
+		BC52F6DF141D905100D129C1 /* CG_TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_TestViewController.h; sourceTree = "<group>"; };
+		BC52F6E0141D905100D129C1 /* CG_TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CG_TestViewController.m; sourceTree = "<group>"; };
+		BC52F6E1141D905100D129C1 /* NavBarBackgroundGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavBarBackgroundGradientView.h; sourceTree = "<group>"; };
+		BC52F6E2141D905100D129C1 /* NavBarBackgroundGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavBarBackgroundGradientView.m; sourceTree = "<group>"; };
+		BC52F6E3141D905100D129C1 /* RedGradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedGradientButton.h; sourceTree = "<group>"; };
+		BC52F6E4141D905100D129C1 /* RedGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedGradientButton.m; sourceTree = "<group>"; };
+		BC52F6ED141D911000D129C1 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heart.png; path = HoneyBadger/heart.png; sourceTree = "<group>"; };
+		BC52F6EF141D9D6B00D129C1 /* MyBadger.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MyBadger.plist; path = ../MyBadger.plist; sourceTree = "<group>"; };
+		BC52F6F4141DA1BB00D129C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = FirstView.xib; sourceTree = "<group>"; };
+		BC52F6F6141DA1BB00D129C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		BC52F6F8141DA1BB00D129C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainWindow.xib; sourceTree = "<group>"; };
+		BC52F6FA141DA1BB00D129C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = SecondView.xib; sourceTree = "<group>"; };
+		BC52F702141DA66A00D129C1 /* cobra_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cobra_64.png; path = HoneyBadger/cobra_64.png; sourceTree = "<group>"; };
+		BC52F703141DA66A00D129C1 /* wasp_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wasp_64.png; path = HoneyBadger/wasp_64.png; sourceTree = "<group>"; };
+		BC52F706141DA81400D129C1 /* sleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sleep.png; path = HoneyBadger/sleep.png; sourceTree = "<group>"; };
+		BC52F708141DD15A00D129C1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BC52F71214204EC100D129C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BC52F7141420696C00D129C1 /* growl.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = growl.wav; path = HoneyBadger/growl.wav; sourceTree = "<group>"; };
+		BCE7A17E14252F5A00A3B5DD /* Reactions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reactions.h; sourceTree = "<group>"; };
+		BCE7A17F14252F5A00A3B5DD /* Reactions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reactions.m; sourceTree = "<group>"; };
+		BCE7A18B142569EF00A3B5DD /* angel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = angel.png; path = HoneyBadger/angel.png; sourceTree = "<group>"; };
+		BCE7A18C142569EF00A3B5DD /* devil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = devil.png; path = HoneyBadger/devil.png; sourceTree = "<group>"; };
+		BCE7A1971426794600A3B5DD /* bite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bite.mp3; path = HoneyBadger/bite.mp3; sourceTree = "<group>"; };
+		BCE7A19914267AE100A3B5DD /* happy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = happy.mp3; path = HoneyBadger/happy.mp3; sourceTree = "<group>"; };
+		BCE7A19B14267B3000A3B5DD /* SoundEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffects.h; sourceTree = "<group>"; };
+		BCE7A19C14267B3000A3B5DD /* SoundEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffects.m; sourceTree = "<group>"; };
+		BCE7A19E14267DFB00A3B5DD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BCE7A1A814268F7D00A3B5DD /* snore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = snore.mp3; path = HoneyBadger/snore.mp3; sourceTree = "<group>"; };
+		BCE7A1AA142697B300A3B5DD /* speaker-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "speaker-off.png"; path = "HoneyBadger/speaker-off.png"; sourceTree = "<group>"; };
+		BCE7A1AB142697B300A3B5DD /* speaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = speaker.png; path = HoneyBadger/speaker.png; sourceTree = "<group>"; };
+		BCE7A1AF1426D04000A3B5DD /* badger-angry-scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "badger-angry-scaled.png"; path = "HoneyBadger/badger-angry-scaled.png"; sourceTree = "<group>"; };
+		BCE7A1B01426D04000A3B5DD /* badger-awake-scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "badger-awake-scaled.png"; path = "HoneyBadger/badger-awake-scaled.png"; sourceTree = "<group>"; };
+		BCE7A1B11426D04000A3B5DD /* badger-happy-scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "badger-happy-scaled.png"; path = "HoneyBadger/badger-happy-scaled.png"; sourceTree = "<group>"; };
+		BCE7A1B21426D04000A3B5DD /* badger-really-happy-scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "badger-really-happy-scaled.png"; path = "HoneyBadger/badger-really-happy-scaled.png"; sourceTree = "<group>"; };
+		BCE7A1B31426D04000A3B5DD /* badger-sleeping-scaled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "badger-sleeping-scaled.png"; path = "HoneyBadger/badger-sleeping-scaled.png"; sourceTree = "<group>"; };
+		BCE7A1BB1426D13800A3B5DD /* badger-scaled.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "badger-scaled.jpg"; path = "HoneyBadger/badger-scaled.jpg"; sourceTree = "<group>"; };
+		BCE7A1BE1426E38D00A3B5DD /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = HoneyBadger/icon.png; sourceTree = "<group>"; };
+		BCE7A1C61426E87700A3B5DD /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-114.png"; path = "HoneyBadger/icon-114.png"; sourceTree = "<group>"; };
+		BCE7A1C81426E95300A3B5DD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = HoneyBadger/Default.png; sourceTree = "<group>"; };
+		BCE7A1CA1426EA2B00A3B5DD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BCE7A1CC14270AC300A3B5DD /* badger-tab-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "badger-tab-icon.png"; path = "HoneyBadger/badger-tab-icon.png"; sourceTree = "<group>"; };
+		BCE7A1CE14270AE400A3B5DD /* badger-tab-icon-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "badger-tab-icon-30.png"; path = "HoneyBadger/badger-tab-icon-30.png"; sourceTree = "<group>"; };
+		BCE7A1D014270C6700A3B5DD /* den-icon-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "den-icon-30.png"; path = "HoneyBadger/den-icon-30.png"; sourceTree = "<group>"; };
+		BCE7A1D214270CE400A3B5DD /* badges-icon-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "badges-icon-30.png"; path = "HoneyBadger/badges-icon-30.png"; sourceTree = "<group>"; };
+		BCE7A1D41427101D00A3B5DD /* Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Badge.h; sourceTree = "<group>"; };
+		BCE7A1D51427101D00A3B5DD /* Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Badge.m; sourceTree = "<group>"; };
+		BCE7A1E114280E1200A3B5DD /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
+		BCE7A1E214280E1200A3B5DD /* Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
+		BCE7A1E4142961DC00A3B5DD /* badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = badge.png; path = HoneyBadger/badge.png; sourceTree = "<group>"; };
+		BCE7A2001429895100A3B5DD /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		BCE7A2011429895200A3B5DD /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		BCE7A2021429895300A3B5DD /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC52F66B141D8CAF00D129C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE7A19F14267DFB00A3B5DD /* AVFoundation.framework in Frameworks */,
+				BC52F71314204EC100D129C1 /* QuartzCore.framework in Frameworks */,
+				BC52F709141DD15A00D129C1 /* AudioToolbox.framework in Frameworks */,
+				BC52F673141D8CAF00D129C1 /* UIKit.framework in Frameworks */,
+				BC52F675141D8CAF00D129C1 /* Foundation.framework in Frameworks */,
+				BC52F677141D8CAF00D129C1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC52F694141D8CAF00D129C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC52F699141D8CAF00D129C1 /* UIKit.framework in Frameworks */,
+				BC52F69A141D8CAF00D129C1 /* Foundation.framework in Frameworks */,
+				BC52F69B141D8CAF00D129C1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC52F663141D8CAF00D129C1 = {
+			isa = PBXGroup;
+			children = (
+				BCE7A1E4142961DC00A3B5DD /* badge.png */,
+				BCE7A1D214270CE400A3B5DD /* badges-icon-30.png */,
+				BCE7A1D014270C6700A3B5DD /* den-icon-30.png */,
+				BCE7A1CE14270AE400A3B5DD /* badger-tab-icon-30.png */,
+				BCE7A1CA1426EA2B00A3B5DD /* Default@2x.png */,
+				BCE7A1C81426E95300A3B5DD /* Default.png */,
+				BCE7A1C61426E87700A3B5DD /* icon-114.png */,
+				BCE7A1BE1426E38D00A3B5DD /* icon.png */,
+				BCE7A1BD1426D16B00A3B5DD /* Sounds */,
+				BCE7A1AE1426D02600A3B5DD /* Images */,
+				BCE7A19E14267DFB00A3B5DD /* AVFoundation.framework */,
+				BC52F6F2141DA1BB00D129C1 /* en.lproj */,
+				BC52F6D8141D905100D129C1 /* ButtonClasses */,
+				BC52F678141D8CAF00D129C1 /* HoneyBadger */,
+				BC52F671141D8CAF00D129C1 /* Frameworks */,
+				BC52F66F141D8CAF00D129C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC52F66F141D8CAF00D129C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC52F66E141D8CAF00D129C1 /* HoneyBadger.app */,
+				BC52F698141D8CAF00D129C1 /* HoneyBadgerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC52F671141D8CAF00D129C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC52F708141DD15A00D129C1 /* AudioToolbox.framework */,
+				BC52F672141D8CAF00D129C1 /* UIKit.framework */,
+				BC52F71214204EC100D129C1 /* QuartzCore.framework */,
+				BC52F674141D8CAF00D129C1 /* Foundation.framework */,
+				BC52F676141D8CAF00D129C1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC52F678141D8CAF00D129C1 /* HoneyBadger */ = {
+			isa = PBXGroup;
+			children = (
+				BCE7A17E14252F5A00A3B5DD /* Reactions.h */,
+				BCE7A17F14252F5A00A3B5DD /* Reactions.m */,
+				BC52F6D5141D903100D129C1 /* BadgerModel.h */,
+				BC52F6D6141D903100D129C1 /* BadgerModel.m */,
+				BC52F681141D8CAF00D129C1 /* HoneyBadgerAppDelegate.h */,
+				BC52F682141D8CAF00D129C1 /* HoneyBadgerAppDelegate.m */,
+				BC52F684141D8CAF00D129C1 /* MainWindow.xib */,
+				BC52F687141D8CAF00D129C1 /* FirstViewController.h */,
+				BC52F688141D8CAF00D129C1 /* FirstViewController.m */,
+				BC52F68A141D8CAF00D129C1 /* SecondViewController.h */,
+				BC52F68B141D8CAF00D129C1 /* SecondViewController.m */,
+				BCE7A2001429895100A3B5DD /* ThirdViewController.h */,
+				BCE7A2011429895200A3B5DD /* ThirdViewController.m */,
+				BC52F68D141D8CAF00D129C1 /* FirstView.xib */,
+				BC52F690141D8CAF00D129C1 /* SecondView.xib */,
+				BCE7A2021429895300A3B5DD /* ThirdViewController.xib */,
+				BC52F679141D8CAF00D129C1 /* Supporting Files */,
+				BCE7A19B14267B3000A3B5DD /* SoundEffects.h */,
+				BCE7A19C14267B3000A3B5DD /* SoundEffects.m */,
+				BCE7A1D41427101D00A3B5DD /* Badge.h */,
+				BCE7A1D51427101D00A3B5DD /* Badge.m */,
+				BCE7A1E114280E1200A3B5DD /* Notification.h */,
+				BCE7A1E214280E1200A3B5DD /* Notification.m */,
+				BC52F69E141D8CAF00D129C1 /* HoneyBadgerTests */,
+			);
+			path = HoneyBadger;
+			sourceTree = "<group>";
+		};
+		BC52F679141D8CAF00D129C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC52F6EF141D9D6B00D129C1 /* MyBadger.plist */,
+				BC52F67A141D8CAF00D129C1 /* HoneyBadger-Info.plist */,
+				BC52F67B141D8CAF00D129C1 /* InfoPlist.strings */,
+				BC52F67E141D8CAF00D129C1 /* HoneyBadger-Prefix.pch */,
+				BC52F67F141D8CAF00D129C1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC52F69E141D8CAF00D129C1 /* HoneyBadgerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC52F6A5141D8CAF00D129C1 /* HoneyBadgerTests.h */,
+				BC52F6A7141D8CAF00D129C1 /* HoneyBadgerTests.m */,
+				BC52F69F141D8CAF00D129C1 /* Supporting Files */,
+			);
+			path = HoneyBadgerTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		BC52F69F141D8CAF00D129C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC52F6A0141D8CAF00D129C1 /* HoneyBadgerTests-Info.plist */,
+				BC52F6A1141D8CAF00D129C1 /* InfoPlist.strings */,
+				BC52F6A4141D8CAF00D129C1 /* HoneyBadgerTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC52F6D8141D905100D129C1 /* ButtonClasses */ = {
+			isa = PBXGroup;
+			children = (
+				BC52F6D9141D905100D129C1 /* AbstractGradientButton.h */,
+				BC52F6DA141D905100D129C1 /* AbstractGradientButton.m */,
+				BC52F6DB141D905100D129C1 /* BlueGradientButton.h */,
+				BC52F6DC141D905100D129C1 /* BlueGradientButton.m */,
+				BC52F6DD141D905100D129C1 /* CG_TestAppDelegate.h */,
+				BC52F6DE141D905100D129C1 /* CG_TestAppDelegate.m */,
+				BC52F6DF141D905100D129C1 /* CG_TestViewController.h */,
+				BC52F6E0141D905100D129C1 /* CG_TestViewController.m */,
+				BC52F6E1141D905100D129C1 /* NavBarBackgroundGradientView.h */,
+				BC52F6E2141D905100D129C1 /* NavBarBackgroundGradientView.m */,
+				BC52F6E3141D905100D129C1 /* RedGradientButton.h */,
+				BC52F6E4141D905100D129C1 /* RedGradientButton.m */,
+			);
+			name = ButtonClasses;
+			path = HoneyBadger/ButtonClasses;
+			sourceTree = "<group>";
+		};
+		BC52F6F2141DA1BB00D129C1 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BC52F6F3141DA1BB00D129C1 /* FirstView.xib */,
+				BC52F6F5141DA1BB00D129C1 /* InfoPlist.strings */,
+				BC52F6F7141DA1BB00D129C1 /* MainWindow.xib */,
+				BC52F6F9141DA1BB00D129C1 /* SecondView.xib */,
+			);
+			name = en.lproj;
+			path = HoneyBadger/en.lproj;
+			sourceTree = "<group>";
+		};
+		BCE7A1AE1426D02600A3B5DD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BCE7A1CC14270AC300A3B5DD /* badger-tab-icon.png */,
+				BCE7A1BB1426D13800A3B5DD /* badger-scaled.jpg */,
+				BCE7A1BA1426D07600A3B5DD /* Buttons */,
+				BCE7A1B91426D05800A3B5DD /* Icons */,
+				BCE7A1AF1426D04000A3B5DD /* badger-angry-scaled.png */,
+				BCE7A1B01426D04000A3B5DD /* badger-awake-scaled.png */,
+				BCE7A1B11426D04000A3B5DD /* badger-happy-scaled.png */,
+				BCE7A1B21426D04000A3B5DD /* badger-really-happy-scaled.png */,
+				BCE7A1B31426D04000A3B5DD /* badger-sleeping-scaled.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		BCE7A1B91426D05800A3B5DD /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				BC52F706141DA81400D129C1 /* sleep.png */,
+				BCE7A18C142569EF00A3B5DD /* devil.png */,
+				BCE7A18B142569EF00A3B5DD /* angel.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		BCE7A1BA1426D07600A3B5DD /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				BCE7A1AA142697B300A3B5DD /* speaker-off.png */,
+				BCE7A1AB142697B300A3B5DD /* speaker.png */,
+				BC52F6ED141D911000D129C1 /* heart.png */,
+				BC52F703141DA66A00D129C1 /* wasp_64.png */,
+				BC52F702141DA66A00D129C1 /* cobra_64.png */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		BCE7A1BD1426D16B00A3B5DD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BCE7A1A814268F7D00A3B5DD /* snore.mp3 */,
+				BC52F7141420696C00D129C1 /* growl.wav */,
+				BCE7A1971426794600A3B5DD /* bite.mp3 */,
+				BCE7A19914267AE100A3B5DD /* happy.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC52F66D141D8CAF00D129C1 /* HoneyBadger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC52F6AB141D8CAF00D129C1 /* Build configuration list for PBXNativeTarget "HoneyBadger" */;
+			buildPhases = (
+				BC52F66A141D8CAF00D129C1 /* Sources */,
+				BC52F66B141D8CAF00D129C1 /* Frameworks */,
+				BC52F66C141D8CAF00D129C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoneyBadger;
+			productName = HoneyBadger;
+			productReference = BC52F66E141D8CAF00D129C1 /* HoneyBadger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC52F697141D8CAF00D129C1 /* HoneyBadgerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC52F6AE141D8CAF00D129C1 /* Build configuration list for PBXNativeTarget "HoneyBadgerTests" */;
+			buildPhases = (
+				BC52F693141D8CAF00D129C1 /* Sources */,
+				BC52F694141D8CAF00D129C1 /* Frameworks */,
+				BC52F695141D8CAF00D129C1 /* Resources */,
+				BC52F696141D8CAF00D129C1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC52F69D141D8CAF00D129C1 /* PBXTargetDependency */,
+			);
+			name = HoneyBadgerTests;
+			productName = HoneyBadgerTests;
+			productReference = BC52F698141D8CAF00D129C1 /* HoneyBadgerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC52F665141D8CAF00D129C1 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = BC52F668141D8CAF00D129C1 /* Build configuration list for PBXProject "HoneyBadger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BC52F663141D8CAF00D129C1;
+			productRefGroup = BC52F66F141D8CAF00D129C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC52F66D141D8CAF00D129C1 /* HoneyBadger */,
+				BC52F697141D8CAF00D129C1 /* HoneyBadgerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC52F66C141D8CAF00D129C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC52F67D141D8CAF00D129C1 /* InfoPlist.strings in Resources */,
+				BC52F686141D8CAF00D129C1 /* MainWindow.xib in Resources */,
+				BC52F68F141D8CAF00D129C1 /* FirstView.xib in Resources */,
+				BC52F692141D8CAF00D129C1 /* SecondView.xib in Resources */,
+				BC52F6EE141D911000D129C1 /* heart.png in Resources */,
+				BC52F6F0141D9D6B00D129C1 /* MyBadger.plist in Resources */,
+				BC52F6FD141DA1BB00D129C1 /* FirstView.xib in Resources */,
+				BC52F6FE141DA1BB00D129C1 /* InfoPlist.strings in Resources */,
+				BC52F6FF141DA1BB00D129C1 /* MainWindow.xib in Resources */,
+				BC52F700141DA1BB00D129C1 /* SecondView.xib in Resources */,
+				BC52F704141DA66A00D129C1 /* cobra_64.png in Resources */,
+				BC52F705141DA66A00D129C1 /* wasp_64.png in Resources */,
+				BC52F707141DA81400D129C1 /* sleep.png in Resources */,
+				BC52F7151420696C00D129C1 /* growl.wav in Resources */,
+				BCE7A18D142569EF00A3B5DD /* angel.png in Resources */,
+				BCE7A18E142569EF00A3B5DD /* devil.png in Resources */,
+				BCE7A1981426794600A3B5DD /* bite.mp3 in Resources */,
+				BCE7A19A14267AE100A3B5DD /* happy.mp3 in Resources */,
+				BCE7A1A914268F7D00A3B5DD /* snore.mp3 in Resources */,
+				BCE7A1AC142697B300A3B5DD /* speaker-off.png in Resources */,
+				BCE7A1AD142697B300A3B5DD /* speaker.png in Resources */,
+				BCE7A1B41426D04000A3B5DD /* badger-angry-scaled.png in Resources */,
+				BCE7A1B51426D04000A3B5DD /* badger-awake-scaled.png in Resources */,
+				BCE7A1B61426D04000A3B5DD /* badger-happy-scaled.png in Resources */,
+				BCE7A1B71426D04000A3B5DD /* badger-really-happy-scaled.png in Resources */,
+				BCE7A1B81426D04000A3B5DD /* badger-sleeping-scaled.png in Resources */,
+				BCE7A1BC1426D13800A3B5DD /* badger-scaled.jpg in Resources */,
+				BCE7A1BF1426E38D00A3B5DD /* icon.png in Resources */,
+				BCE7A1C71426E87700A3B5DD /* icon-114.png in Resources */,
+				BCE7A1C91426E95300A3B5DD /* Default.png in Resources */,
+				BCE7A1CB1426EA2B00A3B5DD /* Default@2x.png in Resources */,
+				BCE7A1CD14270AC300A3B5DD /* badger-tab-icon.png in Resources */,
+				BCE7A1CF14270AE400A3B5DD /* badger-tab-icon-30.png in Resources */,
+				BCE7A1D114270C6700A3B5DD /* den-icon-30.png in Resources */,
+				BCE7A1D314270CE400A3B5DD /* badges-icon-30.png in Resources */,
+				BCE7A1E5142961DD00A3B5DD /* badge.png in Resources */,
+				BCE7A2041429895300A3B5DD /* ThirdViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC52F695141D8CAF00D129C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC52F6A3141D8CAF00D129C1 /* InfoPlist.strings in Resources */,
+				BC52F6A6141D8CAF00D129C1 /* HoneyBadgerTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC52F696141D8CAF00D129C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC52F66A141D8CAF00D129C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC52F680141D8CAF00D129C1 /* main.m in Sources */,
+				BC52F683141D8CAF00D129C1 /* HoneyBadgerAppDelegate.m in Sources */,
+				BC52F689141D8CAF00D129C1 /* FirstViewController.m in Sources */,
+				BC52F68C141D8CAF00D129C1 /* SecondViewController.m in Sources */,
+				BC52F6D7141D903100D129C1 /* BadgerModel.m in Sources */,
+				BC52F6E5141D905100D129C1 /* AbstractGradientButton.m in Sources */,
+				BC52F6E6141D905100D129C1 /* BlueGradientButton.m in Sources */,
+				BC52F6E7141D905100D129C1 /* CG_TestAppDelegate.m in Sources */,
+				BC52F6E8141D905100D129C1 /* CG_TestViewController.m in Sources */,
+				BC52F6E9141D905100D129C1 /* NavBarBackgroundGradientView.m in Sources */,
+				BC52F6EA141D905100D129C1 /* RedGradientButton.m in Sources */,
+				BCE7A18014252F5A00A3B5DD /* Reactions.m in Sources */,
+				BCE7A19D14267B3000A3B5DD /* SoundEffects.m in Sources */,
+				BCE7A1D61427101D00A3B5DD /* Badge.m in Sources */,
+				BCE7A1E314280E1300A3B5DD /* Notification.m in Sources */,
+				BCE7A2031429895300A3B5DD /* ThirdViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC52F693141D8CAF00D129C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC52F6A8141D8CAF00D129C1 /* HoneyBadgerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC52F69D141D8CAF00D129C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC52F66D141D8CAF00D129C1 /* HoneyBadger */;
+			targetProxy = BC52F69C141D8CAF00D129C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC52F67B141D8CAF00D129C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC52F67C141D8CAF00D129C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BC52F684141D8CAF00D129C1 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC52F685141D8CAF00D129C1 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		BC52F68D141D8CAF00D129C1 /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC52F68E141D8CAF00D129C1 /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		BC52F690141D8CAF00D129C1 /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC52F691141D8CAF00D129C1 /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+		BC52F6A1141D8CAF00D129C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC52F6A2141D8CAF00D129C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BC52F6F3141DA1BB00D129C1 /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC52F6F4141DA1BB00D129C1 /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		BC52F6F5141DA1BB00D129C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC52F6F6141DA1BB00D129C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BC52F6F7141DA1BB00D129C1 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC52F6F8141DA1BB00D129C1 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		BC52F6F9141DA1BB00D129C1 /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC52F6FA141DA1BB00D129C1 /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC52F6A9141D8CAF00D129C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jeff Lutzenberger (82KHMLT3JH)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1178C148-3AB7-4280-995E-B8DAC5D114F3";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC52F6AA141D8CAF00D129C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jeff Lutzenberger (82KHMLT3JH)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1178C148-3AB7-4280-995E-B8DAC5D114F3";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		BC52F6AC141D8CAF00D129C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jeff Lutzenberger (82KHMLT3JH)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HoneyBadger/HoneyBadger-Prefix.pch";
+				INFOPLIST_FILE = "HoneyBadger/HoneyBadger-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1178C148-3AB7-4280-995E-B8DAC5D114F3";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BC52F6AD141D8CAF00D129C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Bert J Lutzenberger";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HoneyBadger/HoneyBadger-Prefix.pch";
+				INFOPLIST_FILE = "HoneyBadger/HoneyBadger-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F9CC1B83-5FF3-4672-AB1A-DF9C221BA348";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BC52F6AF141D8CAF00D129C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HoneyBadger.app/HoneyBadger";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HoneyBadgerTests/HoneyBadgerTests-Prefix.pch";
+				INFOPLIST_FILE = "HoneyBadgerTests/HoneyBadgerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		BC52F6B0141D8CAF00D129C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HoneyBadger.app/HoneyBadger";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HoneyBadgerTests/HoneyBadgerTests-Prefix.pch";
+				INFOPLIST_FILE = "HoneyBadgerTests/HoneyBadgerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC52F668141D8CAF00D129C1 /* Build configuration list for PBXProject "HoneyBadger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC52F6A9141D8CAF00D129C1 /* Debug */,
+				BC52F6AA141D8CAF00D129C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC52F6AB141D8CAF00D129C1 /* Build configuration list for PBXNativeTarget "HoneyBadger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC52F6AC141D8CAF00D129C1 /* Debug */,
+				BC52F6AD141D8CAF00D129C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC52F6AE141D8CAF00D129C1 /* Build configuration list for PBXNativeTarget "HoneyBadgerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC52F6AF141D8CAF00D129C1 /* Debug */,
+				BC52F6B0141D8CAF00D129C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC52F665141D8CAF00D129C1 /* Project object */;
+}
